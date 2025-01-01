@@ -1,0 +1,192 @@
+/* Menambahkan box-sizing untuk seluruh elemen */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    overflow-x: hidden; /* Disable horizontal scrolling from the browser */
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    width: 400vw; /* 4 sections wide */
+    transition: transform 0.5s ease-in-out; /* Smooth horizontal scrolling */
+    overflow: hidden;
+}
+
+section {
+    width: 100vw; /* Each section takes the full viewport width */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.hero {
+    background: url('img/mainpic.png') no-repeat center center/cover;
+    color: #fff;
+}
+
+.about {
+    background-image: url('img/fth.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+.projects {
+    background: url('img/Capture.png') no-repeat center center/cover;
+    color: #fff;
+}
+
+.contact {
+    background-image: url('img/contact.png'); /* Ganti dengan path gambar lokal atau URL */
+    background-size: cover; /* Membuat gambar menutupi seluruh area */
+    background-position: center; /* Menjaga gambar tetap terpusat */
+    padding: 50px;
+    text-align: center;
+    color: #fff; /* Menyesuaikan warna teks menjadi putih agar kontras dengan gambar */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+}
+
+.project {
+    flex: 1 1 calc(33.33% - 40px); /* Membagi menjadi tiga kolom dengan jarak */
+    max-width: 200px; /* Ukuran maksimum untuk setiap video */
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+}
+
+blockquote {
+    margin: 0 auto;
+    border: none;
+    width: 100%; /* Membuat video mengikuti ukuran container */
+    height: 120%;
+    aspect-ratio: 3/4; /* Menjaga rasio 3:4 */
+}
+
+.tiktok-embed {
+    max-width: 100%; /* Menghindari elemen melewati kontainer */
+    min-width: unset; /* Menghapus batas minimum */
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus elemen jika ruang tidak cukup */
+    justify-content: space-around; /* Memberi jarak antar elemen */
+    gap: 20px; /* Jarak antar elemen */
+    margin-top: 30px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-icon:hover {
+    opacity: 0.8;
+}
+
+.projects {
+    position: relative; /* Menetapkan konteks posisi untuk elemen anak */
+    background: url('img/Capture.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 50px;
+    padding-bottom: 120px; /* Memberikan ruang untuk tombol di bawah */
+}
+/* Style for the "See All Projects" button in the header */
+.projects-btn {
+    background-color: #1d1d1d; /* Red color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.projects-btn:hover {
+    background-color: #444444; /* Darker red on hover */
+}

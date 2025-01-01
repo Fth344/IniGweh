@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathih Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Fathih Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a data-target="0">Home</a></li>
+                <li><a data-target="1">About</a></li>
+                <li><a data-target="2">Projects</a></li>
+                <li><a data-target="3">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wrapper to hold all sections -->
+    <div class="wrapper" id="wrapper">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="content">
+                <h2>My Portfolio</h2>
+                <p>Here, I’m going to show and introduce who I am.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! I’m Fathih Arya Firmansyah, a creative editor and university student as a content creator.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>Projects</h2>
+                         <!-- New button to go to Projects page -->
+                         <a href="all-projects.html">
+                            <button class="projects-btn">See All Projects</button>
+                        </a>
+            <p>Its my works!</p>
+            <div class="container">
+                <div class="project-gallery">
+                    <!-- Video Projects -->
+                    <div class="project">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@_faithlz/video/7421227380481543429?is_from_webapp=1&sender_device=pc&web_id=7383650150448645648" data-video-id="7421227380481543429" style="max-width: 605px; min-width: 325px;">
+                            <section> </section>
+                        </blockquote>
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                    <div class="project">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@_faithlz/video/7425325663877451013?is_from_webapp=1&sender_device=pc&web_id=7383650150448645648" data-video-id="7425325663877451013" style="max-width: 605px; min-width: 325px;">
+                            <section> </section>
+                        </blockquote>
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                    <div class="project">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@_faithlz/video/7393254068992363782?is_from_webapp=1&sender_device=pc&web_id=7383650150448645648" data-video-id="7393254068992363782" style="max-width: 605px; min-width: 325px;">
+                            <section> </section>
+                        </blockquote>
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or inquiries.</p>
+            <div class="contact-icons">
+                <a href="https://wa.link/wpvaqo" target="_blank" class="contact-icon">
+                    <img src="img/WE A.png" alt="WhatsApp" />
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://www.instagram.com/flz_zy" target="_blank" class="contact-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" />
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@_faithlz" target="_blank" class="contact-icon">
+                    <img src="img/TIKTOK.png" alt="TikTok" />
+                    <span>TikTok</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Fathih Portfolio. Kenalan Yuk!.</p>
+    </footer>
+
+    <!-- Script to handle navigation -->
+    <script>
+        const links = document.querySelectorAll("nav ul li a");
+        const wrapper = document.getElementById("wrapper");
+
+        links.forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const targetIndex = e.target.getAttribute("data-target");
+                const offset = targetIndex * -100; // Calculate the transform value
+                wrapper.style.transform = `translateX(${offset}vw)`; // Scroll horizontally
+            });
+        });
+    </script>
+</body>
+</html>

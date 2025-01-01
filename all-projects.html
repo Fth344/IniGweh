@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects - Fathih Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset dan box-sizing */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fcfcfc;
+        }
+
+        .projects {
+            margin-top: 100px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .projects p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #d1d1d1;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project {
+            background-color: #1c1c1c;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .project h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .project iframe {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .back-btn {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .back-btn button {
+            background-color: #292929;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn button:hover {
+            background-color: #525252;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #000;
+            color: #d1d1d1;
+            font-size: 14px;
+        }
+
+        .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project {
+    width: 100%;
+    height: auto;
+}
+
+.project iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Fathih Portfolio</h1>
+    </header>
+
+    <section class="projects">
+        <h2>All Projects</h2>
+        <p>Explore more of my creative works!</p>
+        
+        <div class="project-gallery">
+    <!-- Project 1 -->
+    <div class="project">
+        <h3>Everything</h3>
+        <iframe src="https://drive.google.com/file/d/1XUDhcXZPEueSoy_29iBTCPxxay2_9tdA/preview" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+        <h3>You</h3>
+        <iframe src="https://drive.google.com/file/d/1idx-_3NkFgiJ69hSjA7l33aJ1vYNGQ2y/preview" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+        <h3>Need</h3>
+        <iframe src="https://drive.google.com/file/d/1JQLerWlT9WYVRYYZvKn_wqHAO-yTZKgb/preview" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project">
+        <h3>It's</h3>
+        <iframe src="https://drive.google.com/file/d/12QfYy6TW0qMrEX7eWhK1ZsMCANk1uLEH/preview" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project">
+        <h3>All</h3>
+        <iframe src="https://drive.google.com/file/d/1kf7O-_ERec1mP3xcFviMcno4H5q28D-q/preview" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="project">
+        <h3>Here!</h3>
+        <iframe src="https://drive.google.com/file/d/16K0wguC8CQLAtRNs4U3Feqqwk7Yvp0fh/preview" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+        <!-- Tombol Kembali -->
+        <div class="back-btn">
+            <button onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fathih Portfolio. Explore Creativity.</p>
+    </footer>
+</body>
+</html>
